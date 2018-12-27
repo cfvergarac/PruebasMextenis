@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180216 14:44:45.406" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\pcc\Documents\Desarrollo\Pruebas automatizadas\appium\appium.robot" id="s1" name="Appium">
+<test id="s1-t1" name="UsoAppium">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=7.0</arg>
+<arg>deviceName=NE1GAM2742708775</arg>
+<arg>appPackage=com.comppra.mextenis</arg>
+<arg>appActivity=com.comppra.mextenis.MainActivity</arg>
+</arguments>
+<msg timestamp="20180216 14:44:47.824" level="INFO">Could not get IP address for host: localhost</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180216 14:44:49.834" level="FAIL">No application is open</msg>
+<status status="FAIL" endtime="20180216 14:44:49.835" starttime="20180216 14:44:49.830"></status>
+</kw>
+<msg timestamp="20180216 14:44:49.835" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20180216 14:44:49.840" level="FAIL">URLError: &lt;urlopen error [Errno 10061] No se puede establecer una conexi\xf3n ya que el equipo de destino deneg\xf3 expresamente dicha conexi\xf3n&gt;</msg>
+<status status="FAIL" endtime="20180216 14:44:49.840" starttime="20180216 14:44:45.812"></status>
+</kw>
+<status status="FAIL" endtime="20180216 14:44:49.841" critical="yes" starttime="20180216 14:44:45.811">URLError: &lt;urlopen error [Errno 10061] No se puede establecer una conexi\xf3n ya que el equipo de destino deneg\xf3 expresamente dicha conexi\xf3n&gt;</status>
+</test>
+<status status="FAIL" endtime="20180216 14:44:49.842" starttime="20180216 14:44:45.413"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Appium" pass="0">Appium</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180216 14:44:49.835" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
